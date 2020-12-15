@@ -1,0 +1,12 @@
+azcopy login --tenant-id=5f5f1c90-abac-4ebe-88d7-0f3d121f967e
+
+
+azcopy make "https://stagingstore4000.blob.core.windows.net/demo"
+
+
+
+azcopy copy "sample.txt" "https://stagingstore4000.blob.core.windows.net/demo/sample.txt"
+
+
+
+azcopy copy "https://stagingstore4000.blob.core.windows.net/demo/sample.txt" "sample.txt"
